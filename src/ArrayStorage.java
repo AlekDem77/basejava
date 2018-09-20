@@ -16,8 +16,6 @@ public class ArrayStorage {
                 size--;
             }
         }
-        //Arrays.fill(storage, null);
-        //System.out.println("Все обнулили");
     }
 
     void save(Resume r) {
