@@ -21,64 +21,48 @@ public class ArrayStorage {
     void save(Resume r) {
         if (size == storage.length) {
             System.out.println("Мест больше нет");
-        } else if (look(r) == true) {
+        } else if (PoiskResumeVMassive(r.uuid) != 01) {
             System.out.println("Есть такое уже");
         } else {
             storage[size] = r;
-            size = size + 1;
+            size++;
         }
     }
 
-    public void update (Resume r, Resume s) {
-        if (look(r) == false){
+    public void update(Resume r, Resume s) {
+        if (PoiskResumeVMassive(r.uuid) == 01) {
             System.out.println("Нет такого че апдейтить то?");
-        }else if (look(r)== true){
-            for(int i=0; i<size;i++){
-                if (storage[i].uuid==r.uuid){
-                    storage[i] = s;
-                }
-            }
+        } else if (PoiskResumeVMassive(r.uuid) != 01) {
+            storage[PoiskResumeVMassive(r.uuid)] = s;
         }
     }
 
-    boolean look(Resume r) {
+    private int PoiskResumeVMassive(String uuid) {
         for (int i = 0; i < size; i++) {
-            if (size == 0) {
-                return false;
-            } else if (r.uuid == storage[i].uuid) {
-                return true;
-            } else {
-                continue;
+            if (uuid.equals(storage[i].toString())) {
+                return i;
             }
         }
-        return false;
+        return 01;
     }
-
 
     Resume get(String uuid) {
-        for (int i = 0; i < storage.length; i++) {
-            if (storage[i] == null) {
-                System.out.println("Такого резюме в базе нет");
-                return null;
-            } else if (uuid.equals(storage[i].toString())) {
-                System.out.println("место в массиве: " + i);
-                System.out.print("Значение: ");
-                return storage[i];
-            }
+        if (PoiskResumeVMassive(uuid) == 01) {
+            System.out.println("Такого резюме в базе нет");
+            return null;
+        } else if (PoiskResumeVMassive(uuid) != 01) {
+            System.out.println("Место в массиве: " + PoiskResumeVMassive(uuid));
+            return storage[PoiskResumeVMassive(uuid)];
         }
         return null;
     }
 
     void delete(String uuid) {
-        for (int i = 0; i < storage.length; i++) {
-            if (storage[i] == null) {
-                System.out.println("Такого резюме в базе нет");
-                break;
-            } else if (uuid.equals(storage[i].toString())) {
-                size = size - 1;
-                storage[i]= storage[size];
-                break;
-            }
+        if (PoiskResumeVMassive(uuid) == 01) {
+            System.out.println("Такого резюме в базе нет");
+        } else {
+            size--;
+            storage[PoiskResumeVMassive(uuid)] = storage[size];
         }
     }
 
