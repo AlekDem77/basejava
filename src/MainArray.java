@@ -28,9 +28,7 @@ public class MainArray {
                 case "update":
                     r = new Resume();
                     r.uuid = uuid;
-                    s = new Resume();
-                    s.uuid = uuid;
-                    ARRAY_STORAGE.update(r, s);
+                    ARRAY_STORAGE.update(r);
                     printAll();
                     break;
                 case "list":
