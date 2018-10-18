@@ -25,7 +25,7 @@ public class Resume implements Comparable<Resume> {
         return uuid.hashCode();
     }
 
-    public void setUuid(String uuid){
+    public void setUuid(String uuid) {
         this.uuid = uuid;
     }
 
@@ -34,7 +34,7 @@ public class Resume implements Comparable<Resume> {
         return uuid;
     }
 
-    public int compareTo (Resume o){
+    public int compareTo(Resume o) {
         return uuid.compareTo(o.uuid);
     }
 }

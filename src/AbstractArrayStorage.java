@@ -28,7 +28,7 @@ public abstract class AbstractArrayStorage implements Storage {
         if (index == -1) {
             System.out.println("Такого резюме в базе нет");
         } else {
-            DeleteResume (index);
+            DeleteResume(index);
             //storage[index] = storage[size-1];
             //size--;
             //storage[size] = null;
@@ -73,6 +73,8 @@ public abstract class AbstractArrayStorage implements Storage {
     }
 
     protected abstract void saveResume(Resume r, int index);
+
     protected abstract void DeleteResume(int index);
+
     protected abstract int getIndexResume(String uuid);
 }
