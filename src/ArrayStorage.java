@@ -12,14 +12,11 @@ public class ArrayStorage extends AbstractArrayStorage {
     @Override
     protected void saveResume(Resume r, int index) {
         storage[size] = r;
-        size++;
     }
 
     @Override
-    protected void DeleteResume(int index) {
+    protected void deleteResume(int index) {
         storage[index] = storage[size - 1];
-        size--;
-        storage[size] = null;
     }
 
     protected int getIndexResume(String uuid) {
