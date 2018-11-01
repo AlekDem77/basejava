@@ -1,10 +1,14 @@
+import exception.ExistStorageException;
+import exception.NotExistStorageException;
+import exception.StorageException;
+
 import java.util.Arrays;
 
 /**
  * Array based storage for Resumes
  */
 public abstract class AbstractArrayStorage implements Storage {
-    protected static final int STORAGE_LIMIT = 5;
+    protected static final int STORAGE_LIMIT = 10000;
 
     protected Resume[] storage = new Resume[STORAGE_LIMIT];
     protected int size = 0;
@@ -12,9 +16,9 @@ public abstract class AbstractArrayStorage implements Storage {
     public void save(Resume r) {
         int index = getIndexResume(r.getUuid());
         if (size == STORAGE_LIMIT) {
-            System.out.println("Мест больше нет");
-        } else if (index > 0) {
-            System.out.println("Есть такое уже");
+            throw new StorageException("Мест больше нет", r.getUuid());
+        } else if (index >= 0) {
+            throw new ExistStorageException(r.getUuid());
         } else {
             saveResume(r, index);
             //storage[size] = r;
@@ -26,7 +30,7 @@ public abstract class AbstractArrayStorage implements Storage {
     public void delete(String uuid) {
         int index = getIndexResume(uuid);
         if (index < 0) {
-            System.out.println("Такого резюме в базе нет");
+            throw new NotExistStorageException(uuid);
         } else {
             deleteResume(index);
             //storage[index] = storage[size-1];
@@ -39,7 +43,7 @@ public abstract class AbstractArrayStorage implements Storage {
     public void update(Resume r) {
         int index = getIndexResume(r.getUuid());
         if (index < 0) {
-            System.out.println("Нет такого че апдейтить то?");
+            throw new NotExistStorageException(r.getUuid()); //System.out.println("Нет такого че апдейтить то?");
         } else {
             storage[index] = r;
         }
@@ -52,7 +56,7 @@ public abstract class AbstractArrayStorage implements Storage {
     public void clear() {
         Arrays.fill(storage, 0, size, null);
         size = 0;
-        System.out.println("Все обнулили");
+        //System.out.println("Все обнулили");
     }
 
     public Resume[] getAll() {
@@ -63,10 +67,9 @@ public abstract class AbstractArrayStorage implements Storage {
     public Resume get(String uuid) {
         int index = getIndexResume(uuid);
         if (index < 0) {
-            System.out.println("Такого резюме в базе нет");
-            return null;
+            throw new NotExistStorageException(uuid);
         } else {
-            System.out.println("Место в массиве: " + index);
+            //System.out.println(index);
             return storage[index];
         }
 
