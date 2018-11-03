@@ -51,9 +51,9 @@ public abstract class AbstractArrayStorageTest {
 
     @Test
     public void saveOverFull() {
-            for (int i = storage.size(); i < AbstractArrayStorage.STORAGE_LIMIT; i++) {
-                storage.save(new Resume());
-            }
+        for (int i = storage.size(); i < AbstractArrayStorage.STORAGE_LIMIT; i++) {
+            storage.save(new Resume());
+        }
         try {
             storage.save(new Resume());
             Assert.fail();
@@ -63,7 +63,6 @@ public abstract class AbstractArrayStorageTest {
 
     @Test
     public void delete() {
-        //Assert.assertEquals(3, storage.size());
         storage.delete(UUID_2);
         Assert.assertEquals(2, storage.size());
     }
@@ -73,8 +72,6 @@ public abstract class AbstractArrayStorageTest {
         storage.update(RESUME_2);
         Assert.assertEquals(RESUME_2, storage.get(UUID_2));
         Assert.assertEquals(3, storage.size());
-        //неуверен, по моему фигня получилась,
-        //вообще как проверить класс который пока ничего толкового не делает
     }
 
     @Test
@@ -104,18 +101,15 @@ public abstract class AbstractArrayStorageTest {
     @Test(expected = NotExistStorageException.class)
     public void getNotExist() throws Exception {
         storage.get("beam");
-        //storage.delete(UUID_1);
     }
 
     @Test(expected = NotExistStorageException.class)
     public void deleteNotExist() throws Exception {
-        //storage.get(UUID_1);
         storage.delete("beam");
     }
 
     @Test(expected = NotExistStorageException.class)
     public void updateNotExist() throws Exception {
-        //storage.get(UUID_1);
         storage.update(new Resume("beam"));
     }
 }
