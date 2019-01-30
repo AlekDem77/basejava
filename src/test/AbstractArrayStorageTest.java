@@ -9,9 +9,6 @@ import org.junit.Test;
 public abstract class AbstractArrayStorageTest {
     private Storage storage;
 
-    public AbstractArrayStorageTest(Storage storage) {
-        this.storage = storage;
-    }
 
     private static final String UUID_1 = "uuid1";
     private static final String UUID_2 = "uuid2";
@@ -23,6 +20,9 @@ public abstract class AbstractArrayStorageTest {
     private static final Resume RESUME_3 = new Resume(UUID_3);
     private static final Resume RESUME_4 = new Resume(UUID_4);
 
+    public AbstractArrayStorageTest(Storage storage) {
+        this.storage = storage;
+    }
 
     @Before
     public void setUp() throws Exception {
