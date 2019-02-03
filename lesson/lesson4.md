@@ -24,5 +24,5 @@
 
 
 ## Домашнее задание
-Реализовать `AbstractStorageTest` и тесты `ArrayStorageTest` и `SortedArrayStorageTest`.
+Реализовать `AbstractStorageTest` и тесты `StorageTest` и `SortedStorageTest`.
 В `MainReflection` сделать вызов метода `toString` через отражение.

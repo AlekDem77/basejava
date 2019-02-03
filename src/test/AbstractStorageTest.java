@@ -1,13 +1,14 @@
 import exception.ExistStorageException;
 import exception.NotExistStorageException;
-import exception.StorageException;
+import model.Resume;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import storage.Storage;
 
-public abstract class AbstractArrayStorageTest {
-    private Storage storage;
+public abstract class AbstractStorageTest {
+    protected Storage storage;
 
 
     private static final String UUID_1 = "uuid1";
@@ -20,7 +21,7 @@ public abstract class AbstractArrayStorageTest {
     private static final Resume RESUME_3 = new Resume(UUID_3);
     private static final Resume RESUME_4 = new Resume(UUID_4);
 
-    public AbstractArrayStorageTest(Storage storage) {
+    public AbstractStorageTest(Storage storage) {
         this.storage = storage;
     }
 
@@ -50,18 +51,6 @@ public abstract class AbstractArrayStorageTest {
     }
 
     @Test
-    public void saveOverFull() {
-        for (int i = storage.size(); i < AbstractArrayStorage.STORAGE_LIMIT; i++) {
-            storage.save(new Resume());
-        }
-        try {
-            storage.save(new Resume());
-            Assert.fail();
-        } catch (StorageException e) {
-        }
-    }
-
-    @Test
     public void delete() {
         storage.delete(UUID_2);
         Assert.assertEquals(2, storage.size());
@@ -69,8 +58,9 @@ public abstract class AbstractArrayStorageTest {
 
     @Test
     public void update() {
-        storage.update(RESUME_2);
-        Assert.assertEquals(RESUME_2, storage.get(UUID_2));
+        Resume testResume = new Resume(UUID_2);
+        storage.update(testResume);
+        Assert.assertEquals(testResume, storage.get(UUID_2));
         Assert.assertEquals(3, storage.size());
     }
 
@@ -98,10 +88,6 @@ public abstract class AbstractArrayStorageTest {
         Assert.assertEquals(new Resume(UUID_2), storage.get(UUID_2));
     }
 
-    @Test(expected = NotExistStorageException.class)
-    public void getNotExist() throws Exception {
-        storage.get("beam");
-    }
 
     @Test(expected = NotExistStorageException.class)
     public void deleteNotExist() throws Exception {
@@ -112,4 +98,10 @@ public abstract class AbstractArrayStorageTest {
     public void updateNotExist() throws Exception {
         storage.update(new Resume("beam"));
     }
+
+    @Test(expected = NotExistStorageException.class)
+    public void getNotExist() throws Exception {
+        storage.get("beam");
+    }
+
 }

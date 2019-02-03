@@ -4,12 +4,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import storage.ArrayStorage;
 
-public class ArrayStorageTest extends AbstractStorageTest {
+public class StorageTest extends AbstractStorageTest {
 
-    public ArrayStorageTest() {
+    public StorageTest() {
         super(new ArrayStorage());
     }
-
 
     @Test
     public void saveOverFull() {
@@ -22,4 +21,5 @@ public class ArrayStorageTest extends AbstractStorageTest {
         } catch (StorageException e) {
         }
     }
+
 }

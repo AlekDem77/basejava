@@ -1,4 +1,7 @@
+package storage;
+
 import exception.StorageException;
+import model.Resume;
 
 import java.util.Arrays;
 
@@ -6,10 +9,11 @@ import java.util.Arrays;
  * Array based storage for Resumes
  */
 public abstract class AbstractArrayStorage extends AbstractStorage {
-    protected static final int STORAGE_LIMIT = 3;
+    protected static final int STORAGE_LIMIT = 10000;
 
     protected Resume[] storage = new Resume[STORAGE_LIMIT];
     protected int size = 0;
+
 
     @Override
     protected void doSaveResume(Resume r, Object findIndex) {
@@ -17,7 +21,6 @@ public abstract class AbstractArrayStorage extends AbstractStorage {
             throw new StorageException("Мест больше нет", r.getUuid());
         } else
             saveResume(r, (Integer) findIndex);
-        //storage[size] = r;
         size++;
     }
 
@@ -25,7 +28,6 @@ public abstract class AbstractArrayStorage extends AbstractStorage {
     @Override
     protected void doDeleteResume(Object findIndex) {
         deleteResume((Integer) findIndex);
-        //storage[index] = storage[size-1];
         size--;
         storage[size] = null;
     }
@@ -43,7 +45,6 @@ public abstract class AbstractArrayStorage extends AbstractStorage {
     public void clear() {
         Arrays.fill(storage, 0, size, null);
         size = 0;
-        //System.out.println("Все обнулили");
     }
 
     public Resume[] getAll() {
@@ -65,5 +66,6 @@ public abstract class AbstractArrayStorage extends AbstractStorage {
     protected boolean isExist(Object findIndex) {
         return (Integer) findIndex >= 0;
     }
+    public int getStorageLimit (){ return STORAGE_LIMIT; }
 
 }

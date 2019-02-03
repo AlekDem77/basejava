@@ -1,5 +1,8 @@
+package storage;
+
 import exception.ExistStorageException;
 import exception.NotExistStorageException;
+import model.Resume;
 
 public abstract class AbstractStorage implements Storage {
 
@@ -9,8 +12,7 @@ public abstract class AbstractStorage implements Storage {
         if (isExist(findIndex)) {
             throw new ExistStorageException(r.getUuid());
         } else {
-            doSaveResume (r, findIndex);
-            //storage[size] = r
+            doSaveResume(r, findIndex);
         }
     }
 
@@ -18,18 +20,16 @@ public abstract class AbstractStorage implements Storage {
     public void delete(String uuid) {
         Object findIndex = getFindIndex(uuid);
         if (!isExist(findIndex)) {
-            throw new NotExistStorageException(uuid); //System.out.println("Нет такого че апдейтить то?");
+            throw new NotExistStorageException(uuid);
         } else {
             doDeleteResume(findIndex);
-            //storage[index] = storage[size-1];
-
         }
     }
 
     public void update(Resume r) {
         Object findIndex = getFindIndex(r.getUuid());
         if (!isExist(findIndex)) {
-            throw new NotExistStorageException(r.getUuid()); //System.out.println("Нет такого че апдейтить то?");
+            throw new NotExistStorageException(r.getUuid());
         } else {
             doUpdate(r, findIndex);
         }
@@ -39,17 +39,16 @@ public abstract class AbstractStorage implements Storage {
     public Resume get(String uuid) {
         Object findIndex = getFindIndex(uuid);
         if (!isExist(findIndex)) {
-            throw new NotExistStorageException(uuid); //System.out.println("Нет такого че апдейтить то?");
+            throw new NotExistStorageException(uuid);
         } else {
-            //System.out.println(index);
-             return  doGet (findIndex);
+            return doGet(findIndex);
         }
 
     }
 
     protected abstract Resume doGet(Object findIndex);
 
-    protected abstract Integer getFindIndex(String uuid);
+    protected abstract Object getFindIndex(String uuid);
 
     protected abstract boolean isExist(Object findIndex);
 

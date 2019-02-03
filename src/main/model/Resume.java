@@ -1,7 +1,9 @@
+package model;
+
 import java.util.UUID;
 
 /**
- * ru.javawebinar.basejava.model.Resume class
+ * ru.javawebinar.basejava.model.model.Resume class
  */
 public class Resume implements Comparable<Resume> {
 

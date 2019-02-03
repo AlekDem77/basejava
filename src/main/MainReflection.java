@@ -1,5 +1,7 @@
 
 
+import model.Resume;
+
 import java.lang.reflect.Field;
 
 public class MainReflection {

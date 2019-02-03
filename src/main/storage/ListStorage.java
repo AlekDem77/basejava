@@ -1,17 +1,22 @@
+package storage;
+
+import model.Resume;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListStorage extends AbstractStorage {
-    private ArrayList<Resume> list = new ArrayList();
+    private List<Resume> list = new ArrayList<>();
 
     @Override
     protected Resume doGet(Object findIndex) {
-        return list.get((Integer)findIndex);
+        return list.get((Integer) findIndex);
     }
 
     @Override
     protected Integer getFindIndex(String uuid) {
-        for (int i = 0; i<list.size(); i++){
-            if (list.get(i).getUuid().equals(uuid)){
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getUuid().equals(uuid)) {
                 return i;
             }
         }
@@ -25,7 +30,7 @@ public class ListStorage extends AbstractStorage {
 
     @Override
     protected void doUpdate(Resume r, Object findIndex) {
-            list.set((Integer)findIndex, r);
+        list.set((Integer) findIndex, r);
     }
 
     @Override
@@ -35,7 +40,7 @@ public class ListStorage extends AbstractStorage {
 
     @Override
     protected void doDeleteResume(Object findIndex) {
-            list.remove(((Integer) findIndex).intValue());
+        list.remove(((Integer) findIndex).intValue());
     }
 
     @Override
@@ -52,5 +57,10 @@ public class ListStorage extends AbstractStorage {
     @Override
     public int size() {
         return list.size();
+    }
+
+    @Override
+    public int getStorageLimit() {
+        return 0;
     }
 }
