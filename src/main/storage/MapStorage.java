@@ -1,9 +1,9 @@
+package storage;
+
 import model.Resume;
-import storage.AbstractStorage;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class MapStorage extends AbstractStorage {
 
@@ -16,13 +16,13 @@ public class MapStorage extends AbstractStorage {
 
     @Override
     protected String getFindIndex(String uuid) {
-        Set<Map.Entry<String, Resume>> entrySet = resumeMap.entrySet();
-        for (Map.Entry<String, Resume> setnotes : entrySet) {
-            if (uuid.equals(setnotes.getValue().getUuid())) {
-                return setnotes.getKey();
-            }
-        }
-        return null;
+      // Set<Map.Entry<String, Resume>> entrySet = resumeMap.entrySet();
+       // for (Map.Entry<String, Resume> setnotes : entrySet) {
+         //   if (uuid.equals(setnotes.getValue().getUuid())) {
+           //     return setnotes.getKey();
+            //}
+     //   }
+        return uuid;
     }
 
     @Override

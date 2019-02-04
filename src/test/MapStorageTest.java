@@ -1,4 +1,4 @@
-
+import storage.MapStorage;
 
 public class MapStorageTest extends AbstractStorageTest {
 

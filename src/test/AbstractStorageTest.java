@@ -103,5 +103,4 @@ public abstract class AbstractStorageTest {
     public void getNotExist() throws Exception {
         storage.get("beam");
     }
-
 }

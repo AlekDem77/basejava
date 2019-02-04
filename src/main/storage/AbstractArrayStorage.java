@@ -66,6 +66,9 @@ public abstract class AbstractArrayStorage extends AbstractStorage {
     protected boolean isExist(Object findIndex) {
         return (Integer) findIndex >= 0;
     }
-    public int getStorageLimit (){ return STORAGE_LIMIT; }
+
+    public int getStorageLimit() {
+        return STORAGE_LIMIT;
+    }
 
 }

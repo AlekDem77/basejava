@@ -12,4 +12,4 @@
 - [Собеседование по Java — коллекции](http://javastudy.ru/interview/collections/)
 
 ## Домашнее задание
-Выделить общий класс `storage.AbstractStorage` и реализовать подклассы `storage.ListStorage` и `MapStorage`. Выбор реализации List и Map за вами.
+Выделить общий класс `storage.AbstractStorage` и реализовать подклассы `storage.ListStorage` и `storage.MapStorage`. Выбор реализации List и Map за вами.
