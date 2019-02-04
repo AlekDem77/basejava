@@ -8,6 +8,7 @@ import org.junit.Test;
 import storage.Storage;
 
 public abstract class AbstractStorageTest {
+
     protected Storage storage;
 
 
