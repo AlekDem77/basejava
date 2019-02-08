@@ -1,10 +1,10 @@
-package storage;
+package src.ru.javawebinar.basejava.storage;
 
-import model.Resume;
+import src.ru.javawebinar.basejava.model.Resume;
 
 import java.util.Arrays;
 
-public class SortedArrayStorage extends AbstractArrayStorage {
+public class SortedArrayStorage extends src.ru.javawebinar.basejava.storage.AbstractArrayStorage {
 
 
     @Override

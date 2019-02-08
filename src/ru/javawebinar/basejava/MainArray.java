@@ -1,13 +1,15 @@
-import model.Resume;
-import storage.SortedArrayStorage;
-import storage.Storage;
+package src.ru.javawebinar.basejava;
+
+import src.ru.javawebinar.basejava.model.Resume;
+import src.ru.javawebinar.basejava.storage.SortedArrayStorage;
+import src.ru.javawebinar.basejava.storage.Storage;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Interactive test for storage.ArrayStorage implementation
+ * Interactive test for src.ru.javawebinar.basejava.storage.ArrayStorage implementation
  * (just run, no need to understand)
  */
 public class MainArray {

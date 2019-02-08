@@ -5,25 +5,25 @@
 
 ## Параметризация. Стирание типов.
 - <a href="http://www.quizful.net/post/java-generics-tutorial">Дженерики (Java, обучающая статья)</a>
-- <a href="http://developer.alexanderklimov.ru/android/java/generic.php">Обобщения (Generic)</a>
+- <a href="http://developer.alexanderklimov.src.ru/android/java/generic.php">Обобщения (Generic)</a>
 - <a href="http://docs.oracle.com/javase/tutorial/java/generics/restrictions.html">Ограничения.</a>
 
 ## Логирование
 -  <a href="https://logging.apache.org/">Log4J (Apache logging)</a>
 -  <a href="http://www.vogella.com/tutorials/Logging/article.html">Java Logging API - Tutorial</a>
-- <a href="https://habrahabr.ru/post/130195/">Логирование в Java / quick start</a>
-- <a href="http://skipy.ru/useful/logging.html">Ведение лога приложения</a>
-- <a href="http://habrahabr.ru/post/113145/">Java Logging: история кошмара</a>
+- <a href="https://habrahabr.src.ru/post/130195/">Логирование в Java / quick start</a>
+- <a href="http://skipy.src.ru/useful/logging.html">Ведение лога приложения</a>
+- <a href="http://habrahabr.src.ru/post/113145/">Java Logging: история кошмара</a>
 
 ## Синглетон, Enum
-- <a href="https://ru.wikipedia.org/wiki/Одиночка_(шаблон_проектирования)">Одиночка (шаблон проектирования)</a>
-- <a href="http://easy-code.ru/lesson/enum-types-java">Перечисляемые типы (enum) в Java</a>
+- <a href="https://src.ru.wikipedia.org/wiki/Одиночка_(шаблон_проектирования)">Одиночка (шаблон проектирования)</a>
+- <a href="http://easy-code.src.ru/lesson/enum-types-java">Перечисляемые типы (enum) в Java</a>
 
 ## Домашнее задание: 
-<a href="https://ru.wikipedia.org/wiki/Доменный_объект">Доменный объект</a>
+<a href="https://src.ru.wikipedia.org/wiki/Доменный_объект">Доменный объект</a>
 
 Cделать объектную модель резюме (диаграмма и классы). <a href="http://u-rise.com/teacherofjava.pdf">Образец резюме</a> (делаем упрощенно)
-  - Делать только классы, включаемые в model.Resume. model.Resume - главный класс. В него все включается (композиция - строгий вид агрегации).
+  - Делать только классы, включаемые в src.ru.javawebinar.basejava.model.Resume. src.ru.javawebinar.basejava.model.Resume - главный класс. В него все включается (композиция - строгий вид агрегации).
   - Схожие по структуре и функциональности сущности делаем одним классом.
   - Модель упрощаем для хранения только необходимой информации для вывода/ редактирования резюме.
   - В модели резюме должны быть представлены контакты и следующие разделы:

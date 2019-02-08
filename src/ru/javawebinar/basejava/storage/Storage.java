@@ -1,9 +1,9 @@
-package storage;
+package src.ru.javawebinar.basejava.storage;
 
-import model.Resume;
+import src.ru.javawebinar.basejava.model.Resume;
 
 /**
- * Array based storage for Resumes
+ * Array based src.ru.javawebinar.basejava.storage for Resumes
  */
 public interface Storage {
     void clear();
@@ -17,7 +17,7 @@ public interface Storage {
     void delete(String uuid);
 
     /**
-     * @return array, contains only Resumes in storage (without null)
+     * @return array, contains only Resumes in src.ru.javawebinar.basejava.storage (without null)
      */
     Resume[] getAll();
 

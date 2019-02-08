@@ -1,8 +1,11 @@
-import exception.StorageException;
-import model.Resume;
+package ru.javawebinar.basejava.storage;
+
+import ru.javawebinar.basejava.storage.AbstractStorageTest;
+import src.ru.javawebinar.basejava.exception.StorageException;
+import src.ru.javawebinar.basejava.model.Resume;
 import org.junit.Assert;
 import org.junit.Test;
-import storage.ArrayStorage;
+import src.ru.javawebinar.basejava.storage.ArrayStorage;
 
 public class ArrayStorageTest extends AbstractStorageTest {
 
@@ -14,10 +17,10 @@ public class ArrayStorageTest extends AbstractStorageTest {
     @Test
     public void saveOverFull() {
         for (int i = storage.size(); i < storage.getStorageLimit(); i++) {
-            storage.save(new Resume());
+            storage.save(new Resume(i + "Name"));
         }
         try {
-            storage.save(new Resume());
+            storage.save(new Resume("OverFull"));
             Assert.fail();
         } catch (StorageException e) {
         }

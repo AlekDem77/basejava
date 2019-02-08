@@ -1,9 +1,9 @@
-package storage;
+package src.ru.javawebinar.basejava.storage;
 
-import model.Resume;
+import src.ru.javawebinar.basejava.model.Resume;
 
 /**
- * Array based storage for Resumes
+ * Array based src.ru.javawebinar.basejava.storage for Resumes
  */
 public class ArrayStorage extends AbstractArrayStorage {
 

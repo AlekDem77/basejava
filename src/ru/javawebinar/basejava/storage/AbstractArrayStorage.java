@@ -1,14 +1,14 @@
-package storage;
+package src.ru.javawebinar.basejava.storage;
 
-import exception.StorageException;
-import model.Resume;
+import src.ru.javawebinar.basejava.exception.StorageException;
+import src.ru.javawebinar.basejava.model.Resume;
 
 import java.util.Arrays;
 
 /**
- * Array based storage for Resumes
+ * Array based src.ru.javawebinar.basejava.storage for Resumes
  */
-public abstract class AbstractArrayStorage extends AbstractStorage {
+public abstract class AbstractArrayStorage extends src.ru.javawebinar.basejava.storage.AbstractStorage {
     protected static final int STORAGE_LIMIT = 10000;
 
     protected Resume[] storage = new Resume[STORAGE_LIMIT];

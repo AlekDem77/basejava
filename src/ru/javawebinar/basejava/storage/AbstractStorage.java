@@ -1,10 +1,10 @@
-package storage;
+package src.ru.javawebinar.basejava.storage;
 
-import exception.ExistStorageException;
-import exception.NotExistStorageException;
-import model.Resume;
+import src.ru.javawebinar.basejava.exception.ExistStorageException;
+import src.ru.javawebinar.basejava.exception.NotExistStorageException;
+import src.ru.javawebinar.basejava.model.Resume;
 
-public abstract class AbstractStorage implements Storage {
+public abstract class AbstractStorage implements src.ru.javawebinar.basejava.storage.Storage {
 
 
     public void save(Resume r) {

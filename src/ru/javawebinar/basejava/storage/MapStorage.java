@@ -1,6 +1,6 @@
-package storage;
+package src.ru.javawebinar.basejava.storage;
 
-import model.Resume;
+import src.ru.javawebinar.basejava.model.Resume;
 
 import java.util.HashMap;
 import java.util.Map;

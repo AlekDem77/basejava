@@ -5,36 +5,36 @@
 ### Подготовка рабочего окружения
 - Установите [JDK8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (выбрать Accept License Agreement)
 - Установите систему управления версиями [Git](http://git-scm.com/downloads) (опции по умолчанию)
-- Создайте аккаунт на [GitHub](https://github.com/). Для удобной навигации по файлам на GitHub можно установить расширение для браузера [Octotree](https://habrahabr.ru/post/223527/)
+- Создайте аккаунт на [GitHub](https://github.com/). Для удобной навигации по файлам на GitHub можно установить расширение для браузера [Octotree](https://habrahabr.src.ru/post/223527/)
 - Установите [IntelliJ IDEA](http://www.jetbrains.com/idea/download/index.html). **Пока нет базы данных и веб, можно работать с версией Community**. На версию Ultimate дается 30 дней пробного бесплатного использования (trial).  На проектах каждый участник проектов получает единоразовый личный купон на бесплатную версию Ultimate на 6 месяцев.
 
 ## ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 1. [Разработка ПО](https://drive.google.com/open?id=0B_4NpoQW1xfpVjZUTEpvVUN1TTA)
-- [Мифический человеко-месяц](https://ru.wikipedia.org/wiki/Мифический_человеко-месяц) (wiki)
+- [Мифический человеко-месяц](https://src.ru.wikipedia.org/wiki/Мифический_человеко-месяц) (wiki)
 - [Размеры проектов в количестве строк кода [eng]](https://medium.freecodecamp.com/the-biggest-codebases-in-history-a128bb3eea73)
 - [Соглашения по оформлению кода [eng]](https://google.github.io/styleguide/javaguide.html)
 - [Методологии разработки ПО](https://dou.ua/forums/topic/14015/)
-- [Ещё раз про семь основных методологий разработки](https://habrahabr.ru/company/edison/blog/269789/)
+- [Ещё раз про семь основных методологий разработки](https://habrahabr.src.ru/company/edison/blog/269789/)
 
 ## ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. [Обзор инструментов и технологий](https://drive.google.com/file/d/0B_4NpoQW1xfpTXJYU2xZbjN2d2M)
-- [Bash — шпаргалка для начинающих](https://tproger.ru/translations/bash-cheatsheet)
-- [Интерактивный курс по SQL](http://www.sql-ex.ru/)
-- [Типичный тест SQL на собеседованиях](https://habrahabr.ru/post/181033/)
+- [Bash — шпаргалка для начинающих](https://tproger.src.ru/translations/bash-cheatsheet)
+- [Интерактивный курс по SQL](http://www.sql-ex.src.ru/)
+- [Типичный тест SQL на собеседованиях](https://habrahabr.src.ru/post/181033/)
 - **Обновление!!*
   - [The State of Java in 2018](http://www.baeldung.com/java-in-2018)
-  - [Что и почему используют Java-разработчики: опрос RebelLabs](https://jug.ru/2017/12/rebellabs-report/)
+  - [Что и почему используют Java-разработчики: опрос RebelLabs](https://jug.src.ru/2017/12/rebellabs-report/)
   - [Java Tools and Technologies Landscape Report 2016](https://zeroturnaround.com/rebellabs/java-tools-and-technologies-landscape-2016/)
   - [Java Tools and Technologies Landscape for 2014](http://zeroturnaround.com/rebellabs/java-tools-and-technologies-landscape-for-2014)
 - **Дополнительно:**
-   - [Автоматизированная сборка проекта в Java](http://spring-projects.ru/guides/maven/)
+   - [Автоматизированная сборка проекта в Java](http://spring-projects.src.ru/guides/maven/)
 
 ## ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 3. [Обзор языка Java](https://drive.google.com/open?id=0B_4NpoQW1xfpTU5SSElhUjlGNnc)
-- [Java](http://ru.wikipedia.org/wiki/Java), [JVM](http://ru.wikipedia.org/wiki/Виртуальная_машина_Java), [JIT-компиляция](http://ru.wikipedia.org/wiki/JIT) (wiki)
-- [Что такое Java? История создания](http://www.intuit.ru/studies/courses/16/16/lecture/27105)
+- [Java](http://src.ru.wikipedia.org/wiki/Java), [JVM](http://src.ru.wikipedia.org/wiki/Виртуальная_машина_Java), [JIT-компиляция](http://src.ru.wikipedia.org/wiki/JIT) (wiki)
+- [Что такое Java? История создания](http://www.intuit.src.ru/studies/courses/16/16/lecture/27105)
 - [Programming languages TIOBE Index](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)
 
 ![jvm](https://cloud.githubusercontent.com/assets/18701152/15219296/e6c67e86-186b-11e6-986f-651a87deec6c.png)
 
-- [ME](http://ru.wikipedia.org/wiki/Java_Platform,_Micro_Edition), [SE](https://ru.wikipedia.org/wiki/Java_Platform,_Standard_Edition), [EE](http://ru.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition) (wiki)
+- [ME](http://src.ru.wikipedia.org/wiki/Java_Platform,_Micro_Edition), [SE](https://src.ru.wikipedia.org/wiki/Java_Platform,_Standard_Edition), [EE](http://src.ru.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition) (wiki)
 - [Java Microbenchmark JMH](http://openjdk.java.net/projects/code-tools/jmh/) (используем на курсе [MasterJava](https://github.com/JavaWebinar/masterjava#Занятие-2))
 - [Oracle Java8 Home](http://docs.oracle.com/javase/8/docs/index.html)
 - **Дополнительно:**
@@ -46,11 +46,11 @@
 
 ![image](https://cloud.githubusercontent.com/assets/18701152/15219746/9295a2fe-186d-11e6-876b-c61cc9be71e4.png)
 
-  - [Система управления версиями](https://ru.wikipedia.org/wiki/Система_управления_версиями) (wiki)
-  - [Сравнение разных VCS](https://biz30.timedoctor.com/ru/cистема-контроля-версий/)
-  - [Git обучалка](https://githowto.com/ru)
+  - [Система управления версиями](https://src.ru.wikipedia.org/wiki/Система_управления_версиями) (wiki)
+  - [Сравнение разных VCS](https://biz30.timedoctor.com/src.ru/cистема-контроля-версий/)
+  - [Git обучалка](https://githowto.com/src.ru)
   - [Интерактивная Git обучалка (в настройках выберите русский язык)](http://learngitbranching.js.org)
-  - [Официальная книга про Git](https://git-scm.com/book/ru/v2)
+  - [Официальная книга про Git](https://git-scm.com/book/src.ru/v2)
   - [Working with remote repositories](https://illustrated-git.readthedocs.org/en/latest/#working-with-remote-repositories)
   - [Базовый курс по обучению Git](https://www.youtube.com/playlist?list=PLIU76b8Cjem5B3sufBJ_KFTpKkMEvaTQR) (youtube)
   - [Git. Быстрый старт](https://www.youtube.com/watch?v=4-NX17Ip-xQ&list=PLmRNNqEA7JoM77hOJkPrLOfJQGizCLR3P) (youtube)
@@ -58,7 +58,7 @@
 ### Настройка проекта
 - Создайте на GitHub репозиторий с названием `basejava`
 - Откройте консоль (терминал) у себя на компьютере
-- Наберите и запустите: `git` (по умолчанию при установке git заносится в PATH. Если он не находится, [занесите](https://www.java.com/ru/download/help/path.xml) git в переменную окружения PATH и перезапустите консоль)
+- Наберите и запустите: `git` (по умолчанию при установке git заносится в PATH. Если он не находится, [занесите](https://www.java.com/src.ru/download/help/path.xml) git в переменную окружения PATH и перезапустите консоль)
 - Создайте локальную копию проекта: `git clone https://github.com/JavaOps/basejava.git`
 - Перейдите в каталог проекта: `cd basejava`
 - Настройте git в локальном проекте на свой проект в GitHub:
@@ -78,20 +78,20 @@
 
 ![finish](https://user-images.githubusercontent.com/29703461/38275669-3e621614-379b-11e8-8b3a-8e0a3ad4c65c.png)
 
-- Реализуйте класс `storage.ArrayStorage`, организовав хранение резюме на основе массива с методами `save, get, delete, size, clear, getAll`
-- Храните все резюме в начале `storage` (без дырок в виде `null`), чтобы не перебирать каждый раз все 10000 элементов
+- Реализуйте класс `src.ru.javawebinar.basejava.storage.ArrayStorage`, организовав хранение резюме на основе массива с методами `save, get, delete, size, clear, getAll`
+- Храните все резюме в начале `src.ru.javawebinar.basejava.storage` (без дырок в виде `null`), чтобы не перебирать каждый раз все 10000 элементов
 ```
-Схема хранения резюме в массиве storage (в элементах от 0 до size-1 отсутствуют null):
+Схема хранения резюме в массиве src.ru.javawebinar.basejava.storage (в элементах от 0 до size-1 отсутствуют null):
 
 r1, r2, r3,..., rn, null, null,..., null
 <----- size ----->
-<------- storage.length (10000) ------->
+<------- src.ru.javawebinar.basejava.storage.length (10000) ------->
 ```
 - Посмотрите на класс `java.util.Arrays`. В нем есть полезные методы, которые помогут вам написать более простой и понятный код
-- Протестируйте вашу реализацию с помощью классов `MainArray.main()` и `MainTestArrayStorage.main()`
+- Протестируйте вашу реализацию с помощью классов `src.ru.javawebinar.basejava.MainArray.src.main()` и `MainTestArrayStorage.src.main()`
 - Изучите дополнительные материалы по IntelliJ IDEA:
   - [Idea Wiki](https://github.com/JavaOPs/topjava/wiki/IDEA) ([поставьте кодировку UTF-8](https://github.com/JavaOPs/topjava/wiki/IDEA#Поставить-кодировку-utf-8), [поменяйте шрифт по умолчанию на DejaVu](https://github.com/JavaOPs/topjava/wiki/IDEA#Поменять-фонт-по-умолчанию-dejavu))
-  - [Руководство пользователя IntelliJ IDEA. Отладчик](http://info.javarush.ru/idea_help/2014/01/22/Руководство-пользователя-IntelliJ-IDEA-Отладчик-.html)
+  - [Руководство пользователя IntelliJ IDEA. Отладчик](http://info.javarush.src.ru/idea_help/2014/01/22/Руководство-пользователя-IntelliJ-IDEA-Отладчик-.html)
   - [Эффективная работа с кодом в IntelliJ IDEA](https://www.youtube.com/watch?v=tpv5n2jWHlw) (youtube)
   - [Эффективная работа в IDEA](https://www.youtube.com/watch?v=_rj7dx6c5R8) (youtube)
 
@@ -112,7 +112,7 @@ r1, r2, r3,..., rn, null, null,..., null
 4. Не злоупотребляйте пустыми строками. Они используются нечасто для логического отделения больших кусков кода.
 5. Удаляйте неиспользуемые импорты (`Ctrl + Alt + O`)
 5. Не игнорируй подсказки IDEA (подсвечивает)
-6. `model.Resume r` — давай переменным осмысленные имена, например `resume`. `r` допустимо в коротких циклах и лямбдах.
+6. `src.ru.javawebinar.basejava.model.Resume r` — давай переменным осмысленные имена, например `resume`. `r` допустимо в коротких циклах и лямбдах.
 7. В методе `clear()` обнуление массива предполагает именно обнуление (null), а не создание нового
 8. По заданию необходимо посмотреть в классе `Arrays методы`, которые помогут упростить реализацию ваших методов `clear()` и `getAll()`
 
@@ -124,4 +124,4 @@ r1, r2, r3,..., rn, null, null,..., null
   - Учись инвестигировать проблему. Внимательное чтение логов и умение дебажить - основные навыки разработчика. В логах надо читать верх самого нижнего эксепшена - там причина всей портянки.
   - Грамотно уделяй время каждой проблеме. Две крайности - сразу бросаться за помощью и бится нам ней часами. Пробуй решить ее сам и в зависимости от проблемы выделяй на это разумное время.
   - Получай в процессе решения обратную связь - в том ли направлении ты идешь.
-  - [Советы новичкам](http://blog.csssr.ru/2016/09/19/how-to-be-a-beginner-developer)
+  - [Советы новичкам](http://blog.csssr.src.ru/2016/09/19/how-to-be-a-beginner-developer)

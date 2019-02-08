@@ -4,12 +4,12 @@
 ### Разбор HW13
 
 ### JOIN
-- <a href="http://www.skillz.ru/dev/php/article-Obyasnenie_SQL_obedinenii_JOIN_INNER_OUTER.html">LEFT, RIGHT, INNER JOIN</a>
+- <a href="http://www.skillz.src.ru/dev/php/article-Obyasnenie_SQL_obedinenii_JOIN_INNER_OUTER.html">LEFT, RIGHT, INNER JOIN</a>
 - Добавляем в `SqlStorage` контакты
 
 ### Транзакции. 
-- <a href="http://ru.wikipedia.org/wiki/Транзакция_(информатика)">Транзакция. ACID.</a> <a href="https://ru.wikipedia.org/wiki/Уровень_изолированности_транзакций">Уровни изоляции транзакций.</a>
-- <a href="http://www.osp.ru/pcworld/2009/07/9708191/">Уровни изоляции транзакций в SQL</a>
+- <a href="http://src.ru.wikipedia.org/wiki/Транзакция_(информатика)">Транзакция. ACID.</a> <a href="https://src.ru.wikipedia.org/wiki/Уровень_изолированности_транзакций">Уровни изоляции транзакций.</a>
+- <a href="http://www.osp.src.ru/pcworld/2009/07/9708191/">Уровни изоляции транзакций в SQL</a>
 - Добавляем в `SqlStorage` транзакции
 - Batch execute.
 
